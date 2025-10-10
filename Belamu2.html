@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Cuide para escolher o tom certo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg1: #f7c6e6;
+      --bg2: #d9c7ff;
+      --accent: #7f4d8a;
+      --panel-bg: rgba(255,255,255,0.85);
+      --muted: #2b2b2b;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: 'Montserrat', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+      background: radial-gradient(circle at 10% 20%, #ffd9f2 0%, transparent 10%), radial-gradient(circle at 90% 80%, #dfe3ff 0%, transparent 10%), linear-gradient(135deg,var(--bg1),var(--bg2));
+      min-height:100vh;
+      color:var(--muted);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:32px;
+    }
+    .card{
+      width:1100px;
+      max-width:96vw;
+      background:transparent;
+      border-radius:12px;
+      padding:28px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+    }
+    header{
+      text-align:center;
+      margin-bottom:20px;
+    }
+    header h1{
+      font-family:'Great Vibes', cursive;
+      font-size:56px;
+      margin:0;
+      color:rgba(255,255,255,0.95);
+      text-shadow:0 2px 8px rgba(0,0,0,0.18);
+      letter-spacing:1px;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns: 1fr 380px 1fr;
+      gap:22px;
+      align-items:start;
+    }
+    .panel{
+      background:var(--panel-bg);
+      padding:28px 24px;
+      border-radius:6px;
+      min-height:380px;
+      display:flex;
+      flex-direction:column;
+      justify-content:flex-start;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.6);
+      border:1px solid rgba(127,77,138,0.08);
+    }
+    .panel .badge{
+      display:inline-block;
+      padding:10px 20px;
+      border-radius:36px;
+      border:3px solid rgba(127,77,138,0.35);
+      font-weight:600;
+      margin-bottom:18px;
+      background:linear-gradient(180deg, rgba(255,255,255,0.9), rgba(255,255,255,0.7));
+      text-transform:lowercase;
+      color:var(--accent);
+      width:max-content;
+    }
+    .panel .badge:first-letter{ text-transform:lowercase }
+    .panel p{
+      font-size:20px;
+      line-height:1.45;
+      margin:6px 0 0 0;
+    }
+
+    /* center image styling */
+    .image-wrap{
+      background:var(--panel-bg);
+      padding:12px;
+      border-radius:6px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+      border:6px solid white;
+      min-height:420px;
+    }
+    .image-wrap img{
+      max-width:100%;
+      height:auto;
+      border-radius:4px;
+      display:block;
+    }
+
+    /* responsive */
+    @media (max-width:1100px){
+      .grid{grid-template-columns: 1fr;}
+      .image-wrap{order:0}
+    }
+
+    /* small tweaks for typography like the example */
+    .panel p.big{
+      font-size:22px;
+      font-weight:600;
+      text-align:left;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <header>
+      <h1>cuide para escolher o tom certo!</h1>
+    </header>
+
+    <section class="grid">
+      <aside class="panel">
+        <div class="badge">saiba a sua cor</div>
+        <p class="big">Ao entrar na loja de cosméticos, se você não souber o seu tom, pergunte a atendente, ela pode te ajudar.</p>
+      </aside>
+
+      <div class="image-wrap">
+        <!-- Coloque a imagem no mesmo diretório do HTML com este nome -->
+        <img src="Makeup Tips Beauty Playful Aura Presentation.jpg" alt="paleta e swatches">
+      </div>
+
+      <aside class="panel">
+        <div class="badge">teste em sua pele</div>
+        <p class="big">Antes de comprar a base e o corretivo, teste em seu rosto. Para a maquiagem funcionar, precisa dos tons certos.</p>
+      </aside>
+    </section>
+  </div>
+</body>
+</html>
+
