@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BeLamu - Introdução</title>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap');
+
+    /* Fundo rosa com brilho */
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      background: radial-gradient(circle at top left, #ffb6d9, #ff9ecf, #ffc7e5);
+      background-image: 
+        radial-gradient(white 1px, transparent 1px),
+        radial-gradient(rgba(255,255,255,0.7) 1px, transparent 1px);
+      background-size: 100px 100px;
+      background-position: 0 0, 50px 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    /* Container principal */
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(255, 255, 255, 0.45);
+      backdrop-filter: blur(8px);
+      border-radius: 25px;
+      padding: 40px 60px;
+      box-shadow: 0 8px 30px rgba(255, 105, 180, 0.4);
+      max-width: 1000px;
+      width: 90%;
+      animation: fadeIn 1.2s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Imagem */
+    .imagem {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .imagem img {
+      width: 80%;
+      border-radius: 20px;
+      box-shadow: 0 0 25px rgba(255, 182, 193, 0.6);
+      transition: transform 0.3s ease;
+    }
+
+    .imagem img:hover {
+      transform: scale(1.05);
+    }
+
+    /* Texto */
+    .texto {
+      flex: 1;
+      padding-left: 40px;
+      text-align: justify;
+      color: #3b2a3a;
+      transition: transform 0.3s ease;
+    }
+
+    .texto:hover {
+      transform: scale(1.08);
+    }
+
+    /* Título */
+    h1 {
+      text-align: center;
+      font-family: 'Great Vibes', cursive;
+      font-size: 3.5rem;
+      color: #ff6fb5;
+      margin-bottom: 20px;
+      text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+      transition: transform 0.3s ease;
+    }
+
+    h1:hover {
+      transform: scale(1.1);
+    }
+
+    /* Parágrafo */
+    p {
+      font-size: 1.2rem;
+      line-height: 1.7;
+    }
+
+    /* Responsividade */
+    @media (max-width: 850px) {
+      .container {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px;
+      }
+
+      .imagem img {
+        width: 70%;
+        margin-bottom: 25px;
+      }
+
+      .texto {
+        padding-left: 0;
+      }
+    }
+   /* ===== MENU ===== */
+    nav {
+      background-color: rgba(255, 105, 180, 0.9); /* rosa pink suave */
+      display: flex;
+      flex-direction: column; /* empilha o logo e os links */
+      align-items: center; /* centraliza tudo */
+      padding: 20px 0;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 10;
+    }
+
+    /* Links do menu */
+    .menu-links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .menu-links a {
+      color: white;
+      text-decoration: none;
+      margin: 0 20px;
+      font-size: 18px;
+      transition: transform 0.3s, color 0.3s;
+    }
+
+    /* Efeito hover (zoom e cor) */
+    .menu-links a:hover {
+      transform: scale(1.2);
+      color: #ffe6f2;
+    }
+
+
+
+
+  </style>
+</head>
+<body>
+  <!-- ===== MENU ===== -->
+  <nav>
+    <div class="menu-links">
+      <a href="Skincare.html">Skincare</a>
+      <a href="Preparação de pele.html">Preparação de pele</a>
+      <a href="contato">Pinceis</a>
+ <a href="Belamu.html">Cuidados com tons</a>
+      <a href="ideia.html">Maquiagens</a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="imagem">
+    <img src="pic.png" alt="pic.png">
+    </div>
+
+    <div class="texto">
+      <h1>Introdução</h1>
+      <p>
+        Bem-vindos ao site <strong>BeLamu</strong>. Aqui ensinamos você a se maquiar da maneira correta!  
+        O intuito desse site é incentivar as meninas a terem uma rotina de autocuidados e a melhorarem a sua autoestima.  
+        Descubra dicas, tutoriais e inspirações para realçar sua beleza natural todos os dias! 💄✨
+      </p>
+    </div>
+  </div>
+
+</body>
+</html>

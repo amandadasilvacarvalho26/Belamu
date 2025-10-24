@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cuide da sua paleta de cores</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Playfair+Display:wght@600&display=swap');
+
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #e6c9f5; /* roxo clarinho */
+      font-family: 'Poppins', sans-serif;
+      color: #4a2c3a;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.8em;
+      color: white;
+      text-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+      margin-bottom: 40px;
+    }
+
+    .gallery {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .card img {
+      width: 280px;
+      height: 360px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .card img:hover {
+      transform: scale(1.07);
+    }
+
+    .label {
+      background-color: rgba(255, 255, 255, 0.8);
+      border: 2px solid rgba(147, 112, 219, 0.6);
+      border-radius: 20px;
+      padding: 10px 20px;
+      margin-top: 12px;
+      font-weight: 600;
+      display: inline-block;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: all 0.3s ease;
+    }
+
+    .label:hover {
+      transform: scale(1.1);
+      box-shadow: 0 6px 20px rgba(147, 112, 219, 0.5);
+    }
+
+    @media (max-width: 900px) {
+      .card img {
+        width: 220px;
+        height: 300px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2em;
+      }
+      .card img {
+        width: 180px;
+        height: 250px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Cuide a sua paleta de cores</h1>
+
+  <div class="gallery">
+    <div class="card">
+      <img src="Clen.png" alt="Clen.png">
+      <div class="label">maquiagem clean</div>
+    </div>
+    <div class="card">
+      <img src="vibrante.png" alt="Cores Vibrantes">
+      <div class="label">cores vibrantes</div>
+    </div>
+    <div class="card">
+      <img src="escuras.png" alt="Cores Escuras">
+      <div class="label">cores escuras</div>
+    </div>
+  </div>
+
+</body>
+</html>
